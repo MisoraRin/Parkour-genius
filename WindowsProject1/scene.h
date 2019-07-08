@@ -1,5 +1,6 @@
 #pragma once
-
+#include"graphic.h"
+#include"barrier.h"
 #include"stdafx.h"
 class scene{
 private:
@@ -8,5 +9,5 @@ private:
 	float time_now;//两个用于判断刷新时间的变量
 public:
 	bool time_flash();
-	void draw();
+	bool draw_graphic(graphic&g);
 };

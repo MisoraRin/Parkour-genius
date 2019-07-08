@@ -45,6 +45,9 @@
     <ClInclude Include="barrier.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="barriers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -63,6 +66,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="graphic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="barrier.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="listener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="barriers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

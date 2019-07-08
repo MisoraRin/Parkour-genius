@@ -8,44 +8,13 @@ private:
 	std::string file;//对应图片保存地址
 public:
 	static float acceleration;//所有对象公有的重力加速度
-	graphic(const char*p) {
-		file = p;
-	}
+	graphic(const char*p="a");
 	//通过速度、重力加速度和时间计算下一帧的显示位置
-	void flash(float t=time_interval) {
-		if (tag_land == FALSE) {
-			y = y + (1 / 2 * acceleration*acceleration) *t + speed * t;
-			speed = speed + acceleration * t;
-		}
-		if (y <= datum_line) {
-			acceleration = 0;
-			speed = 0;
-			y = 0;
-			tag_land = tag_jump = TRUE;
-		}
-	}
-	float y_get() {
-		return y;
-	}
+	void flash(float t);
+	float y_get();
 	//跳跃函数
-	void jump() {
-		if(tag_land == TRUE) {
-			speed = jump_speed;
-			acceleration = gravity;
-			tag_land = FALSE;
-			tag_jump = TRUE;
-		}
-		if (tag_jump == TRUE) {
-			speed = jump_speed;
-			tag_jump = FALSE;
-		}
-	}
-	void tranverse(){
-		y = -y;
-	}
+	void jump();
+	void tranverse();
 	~graphic() = default;
-	const char* file_direction() {
-		const char*p = file.c_str();
-		return p;
-	}
+	const char* file_direction();
 };

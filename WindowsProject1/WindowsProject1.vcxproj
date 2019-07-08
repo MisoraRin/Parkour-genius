@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="barrier.h" />
+    <ClInclude Include="barriers.h" />
     <ClInclude Include="Createwindow.h" />
     <ClInclude Include="function.h" />
     <ClInclude Include="graphic.h" />
@@ -159,9 +160,12 @@
     <ClInclude Include="WindowsProject1.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="barrier.cpp" />
+    <ClCompile Include="barriers.cpp" />
     <ClCompile Include="Createwindow.cpp" />
     <ClCompile Include="function.cpp" />
     <ClCompile Include="graphic.cpp" />
+    <ClCompile Include="listener.cpp" />
     <ClCompile Include="scene.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -5,3 +5,6 @@ bool scene::time_flash() {
 	if (time_now - time_pre > flash_speed)time_pre = time_now;
 	return TRUE;
 }
+//bool scene::draw_graphic(graphic&g) {
+//
+//}
